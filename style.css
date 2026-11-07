@@ -1,0 +1,64 @@
+*
+ {
+    box-sizing: border-box;
+}
+:root {
+      --bg: #ffffff;
+      --text: #1a1a1a;
+      --card: #f6ecec;
+      --accent: #3b82f6;
+    }
+
+    body.dark {
+      --bg: #121212;
+      --text: #f1f1f1;
+      --card: #1e1e1e;
+      --accent: #f9c405;
+    }
+body {
+  margin: 0;
+  color: var(--text);
+  background: var(--bg);
+  transition: 300ms;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: var(--card);
+}
+
+header h1{
+    margin: 0;
+    font-size: 24px;
+}
+
+#black {
+    padding: 10px 18px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    color: #000;
+    background: var(--accent);
+    cursor: pointer;
+}
+
+#black:hover {
+    opacity: 0.85;
+}
+
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0px 20px;
+}
+
+.card {
+      background: var(--card);
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
